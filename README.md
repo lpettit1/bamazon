@@ -56,3 +56,6 @@
   * If a manager selects `Add to Inventory`, your app should display a prompt that will let the manager "add more" of any item currently in the store.
 
   * If a manager selects `Add New Product`, it should allow the manager to add a completely new product to the store.
+
+#screen shots
+  https://drive.google.com/open?id=1YQfH3XuwyovY-ryvghnrQ1e1RNoBkchv
