@@ -49,8 +49,9 @@ function inventory() {
     function listInventory() {
         connection.query("SELECT * FROM products", function (err, res) {
             for (var i = 0; i < res.length; i++) {
-                var itemId = res[i].product_name,
-                    productName = res[i].department_name,
+                var itemId = res[i].item_id,
+                    productName = res[i].product_name,
+                    departmentName = res[i].department_name,
                     price = res[i].price,
                     stockQuantity = res[i].stock_quantity;
 
@@ -123,7 +124,7 @@ function selectionPrompt() {
                     console.log("Price " + res[i].price);
                     console.log("Quantity: " + userPurchase.inputNumber);
                     console.log("-------------------");
-                    console.log("Total: " + re[i], price * userPurchase.inputNumber);
+                    console.log("Total: " + res[i].price * userPurchase.inputNumber);
                     console.log("===========================================");
 
                     var newStock = (res[i].stock_quantity - userPurchase.inputNumber);

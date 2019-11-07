@@ -3,11 +3,11 @@ CREATE DATABASE bamazon_db;
 USE bamazon_db;
 
 CREATE TABLE products (
-    item_id INT(15) AUTO_INCREMENT  NOT NULL,
+    item_id INT AUTO_INCREMENT  NOT NULL,
     product_name VARCHAR(100) NOT NULL,
     department_name VARCHAR(100) NOT NULL,
     price DECIMAL(10,2) NOT NULL,
-    stock_quantity INT (100) NOT NULL,
+    stock_quantity INT NOT NULL,
     PRIMARY KEY (item_id)
 );
 
@@ -25,7 +25,7 @@ INSERT INTO products (product_name, department_name, price, stock_quantity)
     ("Biomutant - Xbox One", "Electronic", 59.99, 12),
     ("Call of Duty: Modern Warfare - Xbox One", "Electronic", 55.99, 10),
     ("Mini Moustachery Shave Kit Shavette", "Beauty", 115.00, 15),
-    ("Mini Moustachery Shave Kit Chrome", "Beauty", 74.99),
+    ("Mini Moustachery Shave Kit Chrome", "Beauty", 74.99, 15,
     ("Scalpmaster Boar Brush Black Accrylic Handle", "Beauty", 12.00, 10),
     ("Mini Moustachery Shave Cream Scobberlotch (Mahogany & Teakwood)", "Beauty", 14.99, 15),
     ("Scalpmaster Deluxe Shavette W/ Blades", "Beauty", 20.00, 20);
